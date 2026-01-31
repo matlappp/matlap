@@ -1,15 +1,8 @@
-/* ═══════════════════════════════════════
-   MATLAP DESIGN — Scripts
-   ═══════════════════════════════════════ */
-
-/* ─── TRANSLATIONS ─── */
 const translations = {
 
     fr: {
-        // Nav
         'nav.projects':            'Projets',
 
-        // Hero
         'hero.intro':              'Agence de design web — Québec',
         'hero.title':              'Des sites web qui <em>marquent les esprits</em>',
         'hero.experience.label':   'Expérience',
@@ -19,12 +12,10 @@ const translations = {
         'hero.availability.label': 'Disponibilité',
         'hero.availability.value': 'Ouvert aux projets',
 
-        // About
         'about.label':  'À propos',
         'about.p1':     'Fondé par <strong>Mathieu Lapalme</strong>, Matlap Design crée des expériences web sur mesure depuis <strong>4 ans</strong> pour des entreprises qui veulent se démarquer. Chaque projet est une occasion de transformer une vision en un site qui performe — visuellement et stratégiquement.',
         'about.p2':     'L\'approche est simple : <strong>comprendre votre marque</strong>, concevoir un design qui lui ressemble, et livrer un site rapide, responsive et pensé pour convertir.',
 
-        // Services
         'services.design.title':    'Design web',
         'services.design.desc':     'Des interfaces visuellement distinctives, pensées pour votre marque et votre audience.',
         'services.dev.title':       'Développement',
@@ -32,25 +23,25 @@ const translations = {
         'services.strategy.title':  'Stratégie',
         'services.strategy.desc':   'Structure, contenu et parcours utilisateur pensés pour convertir vos visiteurs.',
 
-        // Projects
         'projects.label': 'Projets',
         'projects.title': 'Travaux sélectionnés',
 
-        // Contact
+        'projects.1.type': 'Entretien',
+        'projects.2.type': 'Aide à domicile',
+        'projects.3.type': 'Bijouterie',
+        'projects.4.type': 'Levée de fonds',
+
         'contact.label': 'Prochain projet?',
         'contact.title': 'Discutons de<br><em>votre vision</em>',
         'contact.btn':   'Écrire à Matlap',
 
-        // Meta
         '_meta.title':       'Matlap Design — Design Web sur mesure',
         '_meta.description': 'Matlap Design crée des sites web sur mesure, performants et visuellement distinctifs. Basé au Québec, fondé par Mathieu Lapalme.',
     },
 
     en: {
-        // Nav
         'nav.projects':            'Projects',
 
-        // Hero
         'hero.intro':              'Web design agency — Quebec',
         'hero.title':              'Websites that <em>leave a mark</em>',
         'hero.experience.label':   'Experience',
@@ -60,12 +51,10 @@ const translations = {
         'hero.availability.label': 'Availability',
         'hero.availability.value': 'Open to projects',
 
-        // About
         'about.label':  'About',
         'about.p1':     'Founded by <strong>Mathieu Lapalme</strong>, Matlap Design has been crafting bespoke web experiences for <strong>4 years</strong> for businesses that want to stand out. Every project is an opportunity to turn a vision into a website that performs — visually and strategically.',
         'about.p2':     'The approach is straightforward: <strong>understand your brand</strong>, design something that truly represents it, and deliver a fast, responsive site built to convert.',
 
-        // Services
         'services.design.title':    'Web design',
         'services.design.desc':     'Visually distinctive interfaces, crafted for your brand and your audience.',
         'services.dev.title':       'Development',
@@ -73,31 +62,26 @@ const translations = {
         'services.strategy.title':  'Strategy',
         'services.strategy.desc':   'Structure, content and user journeys designed to convert your visitors.',
 
-        // Projects
         'projects.label': 'Projects',
         'projects.title': 'Selected work',
 
-        // Contact
+        'projects.1.type': 'Maintenance',
+        'projects.2.type': 'Home care',
+        'projects.3.type': 'Jewelry',
+        'projects.4.type': 'Fundraising',
+
         'contact.label': 'Next project?',
         'contact.title': 'Let\'s discuss<br><em>your vision</em>',
         'contact.btn':   'Write to Matlap',
-
-        // Meta
         '_meta.title':       'Matlap Design — Custom Web Design',
         '_meta.description': 'Matlap Design creates bespoke, high-performance, visually distinctive websites. Based in Quebec, founded by Mathieu Lapalme.',
     }
 };
 
-
-/* ─── i18n ENGINE ─── */
 const i18n = {
 
     currentLang: 'fr',
 
-    /**
-     * Détermine la langue initiale.
-     * Priorité : URL param > localStorage > défaut (fr)
-     */
     init() {
         const urlParam = new URLSearchParams(window.location.search).get('lang');
         const stored   = localStorage.getItem('matlap-lang');
@@ -114,14 +98,10 @@ const i18n = {
         this.updateSwitch();
     },
 
-    /**
-     * Applique toutes les traductions au DOM.
-     */
     apply() {
         const lang = this.currentLang;
         const dict = translations[lang];
 
-        // Traduit chaque élément avec data-i18n
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
             if (!dict[key]) return;
@@ -133,10 +113,8 @@ const i18n = {
             }
         });
 
-        // Met à jour <html lang="">
         document.documentElement.lang = lang;
 
-        // Met à jour <title> et meta description
         if (dict['_meta.title']) {
             document.title = dict['_meta.title'];
         }
@@ -146,28 +124,16 @@ const i18n = {
         }
     },
 
-    /**
-     * Bascule entre FR et EN.
-     */
     toggle() {
         this.currentLang = this.currentLang === 'fr' ? 'en' : 'fr';
-
-        // Sauvegarde dans localStorage
         localStorage.setItem('matlap-lang', this.currentLang);
-
-        // Met à jour l'URL sans recharger la page
         const url = new URL(window.location);
         url.searchParams.set('lang', this.currentLang);
         window.history.replaceState({}, '', url);
-
         this.apply();
         this.updateSwitch();
     },
-
-    /**
-     * Met à jour le texte du bouton switcher.
-     * Affiche la langue OPPOSÉE (celle vers laquelle on peut basculer).
-     */
+   
     updateSwitch() {
         const btn = document.getElementById('langSwitch');
         if (btn) {
@@ -176,19 +142,14 @@ const i18n = {
     }
 };
 
-
-/* ─── DOM READY ─── */
 document.addEventListener('DOMContentLoaded', () => {
 
-    /* ─── Init i18n ─── */
     i18n.init();
 
     document.getElementById('langSwitch').addEventListener('click', () => {
         i18n.toggle();
     });
 
-
-    /* ─── Scroll Reveal ─── */
     const reveals = document.querySelectorAll('.reveal');
 
     const revealObserver = new IntersectionObserver((entries) => {
@@ -201,8 +162,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     reveals.forEach(el => revealObserver.observe(el));
 
-
-    /* ─── Staggered reveal for project items ─── */
     const projectItems = document.querySelectorAll('.project-item');
 
     const projectObserver = new IntersectionObserver((entries) => {
@@ -227,8 +186,6 @@ document.addEventListener('DOMContentLoaded', () => {
     style.textContent = `.project-item.visible { opacity: 1 !important; transform: translateY(0) !important; }`;
     document.head.appendChild(style);
 
-
-    /* ─── Smooth scroll for nav links ─── */
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', (e) => {
             const target = document.querySelector(anchor.getAttribute('href'));
@@ -238,5 +195,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
 });
