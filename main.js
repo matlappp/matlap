@@ -37,6 +37,12 @@ const translations = {
 
         '_meta.title':       'Matlap Design — Design Web sur mesure',
         '_meta.description': 'Matlap Design crée des sites web sur mesure, performants et visuellement distinctifs. Basé au Québec, fondé par Mathieu Lapalme.',
+
+        '404.nav.home': 'Accueil',
+        '404.label':    'Erreur 404',
+        '404.title':    'Cette page <em>n\'existe pas</em>',
+        '404.desc':     'La page que vous cherchez a peut-être été déplacée, supprimée, ou n\'a jamais existé.',
+        '404.btn':      'Retour à l\'accueil',
     },
 
     en: {
@@ -75,6 +81,12 @@ const translations = {
         'contact.btn':   'Write to Matlap',
         '_meta.title':       'Matlap Design — Custom Web Design',
         '_meta.description': 'Matlap Design creates bespoke, high-performance, visually distinctive websites. Based in Quebec, founded by Mathieu Lapalme.',
+
+        '404.nav.home': 'Home',
+        '404.label':    'Error 404',
+        '404.title':    'This page <em>doesn\'t exist</em>',
+        '404.desc':     'The page you\'re looking for may have been moved, deleted, or never existed.',
+        '404.btn':      'Back to home',
     }
 };
 
