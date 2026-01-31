@@ -1,4 +1,5 @@
 User-agent: *
-Disallow:
+
+Disallow: /404.html
 
 Sitemap: https://www.matlap.ca/sitemap.xml
