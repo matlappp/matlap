@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — Matlap Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Libre+Franklin:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a href="/" class="nav-name" style="text-decoration:none;">Matlap Design</a>
+        <div class="nav-links">
+            <a href="/" data-i18n="404.nav.home">Accueil</a>
+            <button class="lang-switch" id="langSwitch" aria-label="Switch language">EN</button>
+        </div>
+    </nav>
+
+    <!-- 404 -->
+    <section class="error-page">
+        <div class="error-code">404</div>
+        <div class="error-content">
+            <p class="error-label" data-i18n="404.label">Erreur 404</p>
+            <h1 data-i18n="404.title" data-i18n-html="true">Cette page <em>n'existe pas</em></h1>
+            <p class="error-desc" data-i18n="404.desc">La page que vous cherchez a peut-être été déplacée, supprimée, ou n'a jamais existé.</p>
+            <a href="/" class="error-btn">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                <span data-i18n="404.btn">Retour à l'accueil</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <span class="footer-left">© 2025 Matlap Design</span>
+        <div class="footer-right">
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
