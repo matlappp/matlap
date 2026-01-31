@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Libre+Franklin:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -16,28 +16,29 @@
     <nav>
         <span class="nav-name">Matlap Design</span>
         <div class="nav-links">
-            <a href="#work">Projets</a>
+            <a href="#work" data-i18n="nav.projects">Projets</a>
             <a href="#contact">Contact</a>
+            <button class="lang-switch" id="langSwitch" aria-label="Switch language">EN</button>
         </div>
     </nav>
 
     <!-- HERO -->
     <section class="hero">
         <div class="hero-watermark">MD</div>
-        <p class="hero-intro">Agence de design web — Québec</p>
-        <h1>Des sites web qui <em>marquent les esprits</em></h1>
+        <p class="hero-intro" data-i18n="hero.intro">Agence de design web — Québec</p>
+        <h1 data-i18n="hero.title" data-i18n-html="true">Des sites web qui <em>marquent les esprits</em></h1>
         <div class="hero-meta">
             <div class="hero-meta-item">
-                <span class="hero-meta-label">Expérience</span>
-                <span class="hero-meta-value">4 ans</span>
+                <span class="hero-meta-label" data-i18n="hero.experience.label">Expérience</span>
+                <span class="hero-meta-value" data-i18n="hero.experience.value">4 ans</span>
             </div>
             <div class="hero-meta-item">
-                <span class="hero-meta-label">Spécialité</span>
-                <span class="hero-meta-value">Design & Développement</span>
+                <span class="hero-meta-label" data-i18n="hero.specialty.label">Spécialité</span>
+                <span class="hero-meta-value" data-i18n="hero.specialty.value">Design & Développement</span>
             </div>
             <div class="hero-meta-item">
-                <span class="hero-meta-label">Disponibilité</span>
-                <span class="hero-meta-value">Ouvert aux projets</span>
+                <span class="hero-meta-label" data-i18n="hero.availability.label">Disponibilité</span>
+                <span class="hero-meta-value" data-i18n="hero.availability.value">Ouvert aux projets</span>
             </div>
         </div>
     </section>
@@ -46,10 +47,10 @@
 
     <!-- ABOUT -->
     <section class="about reveal">
-        <span class="section-label">À propos</span>
+        <span class="section-label" data-i18n="about.label">À propos</span>
         <div class="about-text">
-            <p>Fondé par <strong>Mathieu Lapalme</strong>, Matlap Design crée des expériences web sur mesure depuis <strong>4 ans</strong> pour des entreprises qui veulent se démarquer. Chaque projet est une occasion de transformer une vision en un site qui performe — visuellement et stratégiquement.</p>
-            <p>L'approche est simple : <strong>comprendre votre marque</strong>, concevoir un design qui lui ressemble, et livrer un site rapide, responsive et pensé pour convertir.</p>
+            <p data-i18n="about.p1" data-i18n-html="true">Fondé par <strong>Mathieu Lapalme</strong>, Matlap Design crée des expériences web sur mesure depuis <strong>4 ans</strong> pour des entreprises qui veulent se démarquer. Chaque projet est une occasion de transformer une vision en un site qui performe — visuellement et stratégiquement.</p>
+            <p data-i18n="about.p2" data-i18n-html="true">L'approche est simple : <strong>comprendre votre marque</strong>, concevoir un design qui lui ressemble, et livrer un site rapide, responsive et pensé pour convertir.</p>
         </div>
     </section>
 
@@ -64,18 +65,18 @@
         <div class="services-list">
             <div class="service-item">
                 <span class="service-number">01</span>
-                <h3>Design web</h3>
-                <p>Des interfaces visuellement distinctives, pensées pour votre marque et votre audience.</p>
+                <h3 data-i18n="services.design.title">Design web</h3>
+                <p data-i18n="services.design.desc">Des interfaces visuellement distinctives, pensées pour votre marque et votre audience.</p>
             </div>
             <div class="service-item">
                 <span class="service-number">02</span>
-                <h3>Développement</h3>
-                <p>Des sites rapides, responsive et optimisés. Du code propre, des performances réelles.</p>
+                <h3 data-i18n="services.dev.title">Développement</h3>
+                <p data-i18n="services.dev.desc">Des sites rapides, responsive et optimisés. Du code propre, des performances réelles.</p>
             </div>
             <div class="service-item">
                 <span class="service-number">03</span>
-                <h3>Stratégie</h3>
-                <p>Structure, contenu et parcours utilisateur pensés pour convertir vos visiteurs.</p>
+                <h3 data-i18n="services.strategy.title">Stratégie</h3>
+                <p data-i18n="services.strategy.desc">Structure, contenu et parcours utilisateur pensés pour convertir vos visiteurs.</p>
             </div>
         </div>
     </section>
@@ -85,12 +86,12 @@
     <!-- PROJECTS -->
     <section class="projects reveal" id="work">
         <div class="projects-header">
-            <span class="section-label">Projets</span>
-            <h2>Travaux sélectionnés</h2>
+            <span class="section-label" data-i18n="projects.label">Projets</span>
+            <h2 data-i18n="projects.title">Travaux sélectionnés</h2>
         </div>
         <div class="project-list">
 
-            <!-- PROJET 1 — Remplacer href="#" par le vrai lien -->
+            <!-- PROJET 1 -->
             <div class="project-item">
                 <a href="#" target="_blank" class="project-link">
                     <span class="project-name">Le Bar à Croissant</span>
@@ -145,10 +146,10 @@
 
     <!-- CONTACT -->
     <section class="contact reveal" id="contact">
-        <p class="contact-label">Prochain projet?</p>
-        <h2>Discutons de<br><em>votre vision</em></h2>
+        <p class="contact-label" data-i18n="contact.label">Prochain projet?</p>
+        <h2 data-i18n="contact.title" data-i18n-html="true">Discutons de<br><em>votre vision</em></h2>
         <a href="mailto:votre@email.com" class="contact-btn">
-            Écrire à Matlap
+            <span data-i18n="contact.btn">Écrire à Matlap</span>
             <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </a>
     </section>
@@ -162,6 +163,7 @@
         </div>
     </footer>
 
-    <script src="./main.js"></script>
+    <script src="main.js"></script>
+
 </body>
 </html>
