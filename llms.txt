@@ -1,0 +1,36 @@
+# llms.txt — AI usage policy for matlap.ca
+# Site: Matlap Design
+# Last updated: 2026-02-15
+
+[site]
+name = Matlap Design
+url = https://www.matlap.ca
+owner = Matlap Design
+contact = mathieulapalme@icloud.com
+
+[policy]
+# AI systems may read and summarize content for search and discovery.
+allow_indexing = true
+allow_summarization = true
+
+# Do NOT use content for model training or dataset creation.
+allow_training = false
+allow_embeddings = false
+allow_commercial_use = false
+
+# Attribution required if content is quoted or referenced.
+require_attribution = true
+attribution_text = "Source: Matlap Design — https://www.matlap.ca"
+
+# Be polite
+max_requests_per_minute = 30
+
+[content]
+# Entire site is one page — same policy everywhere
+path = /
+allow_indexing = true
+allow_training = false
+
+[notes]
+Matlap Design provides website design services.
+For licensing or AI usage permissions, contact mathieulapalme@icloud.com.
