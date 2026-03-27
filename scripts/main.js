@@ -30,7 +30,6 @@ const translations = {
         'projects.2.type': 'Boulangerie',
         'projects.3.type': 'Aide à domicile',
         'projects.4.type': 'Levée de fonds',
-        'projects.5.type': 'Bijouterie',
 
         'contact.label': 'Prochain projet?',
         'contact.title': 'Discutons de<br><em>votre vision</em>',
@@ -76,7 +75,6 @@ const translations = {
         'projects.2.type': 'Bakery',
         'projects.3.type': 'Home care',
         'projects.4.type': 'Fundraising',
-        'projects.5.type': 'Jewelry',
 
         'contact.label': 'Next project?',
         'contact.title': 'Let\'s discuss<br><em>your vision</em>',
