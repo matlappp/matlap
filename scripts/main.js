@@ -127,11 +127,12 @@ const i18n = {
 
         document.documentElement.lang = lang;
 
-        if (dict['_meta.title']) {
+        const is404 = document.querySelector('.error-page') !== null;
+        if (!is404 && dict['_meta.title']) {
             document.title = dict['_meta.title'];
         }
         const metaDesc = document.querySelector('meta[name="description"]');
-        if (metaDesc && dict['_meta.description']) {
+        if (!is404 && metaDesc && dict['_meta.description']) {
             metaDesc.setAttribute('content', dict['_meta.description']);
         }
     },

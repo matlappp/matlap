@@ -3,28 +3,28 @@
     font-family: 'Instrument Serif';
     font-style: normal;
     font-weight: 400;
-    src: url('./fonts/Instrument-Serif.woff2') format('woff2');
+    src: url('/fonts/Instrument-Serif.woff2') format('woff2');
 }
 @font-face {
     font-display: swap;
     font-family: 'Libre Franklin';
     font-style: normal;
     font-weight: 400;
-    src: url('./fonts/Libre-Franklin-Regular.woff2') format('woff2');
+    src: url('/fonts/Libre-Franklin-Regular.woff2') format('woff2');
 }
 @font-face {
     font-display: swap;
     font-family: 'Libre Franklin';
     font-style: italic;
     font-weight: 400;
-    src: url('./fonts/Libre-Franklin-Regular-Italic.woff2') format('woff2');
+    src: url('/fonts/Libre-Franklin-Regular-Italic.woff2') format('woff2');
 }
 @font-face {
     font-display: swap;
     font-family: 'Libre Franklin';
     font-style: normal;
     font-weight: 500;
-    src: url('./fonts/Libre-Franklin-Medium.woff2') format('woff2');
+    src: url('/fonts/Libre-Franklin-Medium.woff2') format('woff2');
 }
 
 :root {
