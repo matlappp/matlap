@@ -27,8 +27,9 @@ Ce dépôt contient le code source du site vitrine de [matlap.ca](https://www.ma
 |---|---|---|
 | [MW Multiservices](https://www.mwmultiservices.ca) | Entretien | 2025 |
 | [Le Bar à Croissant](https://www.lebaracroissant.ca) | Boulangerie | 2026 |
-| [Aide-Zen](https://www.aide-zen.com) | Aide à domicile | 2025 |
 | [Club L'Enjambée](https://www.clublenjambee.ca) | Levée de fonds | 2026 |
+| [B&B Construction](https://www.bbconstruction.ca) | Entreprise de construction | 2026 |
+| [Aide-Zen](https://www.aide-zen.com) | Aide à domicile | 2025 |
 | [Maison Horazin](https://matlappp.github.io/maisonhorazin/) | Bijouterie | 2026 |
 
 ## Contact
@@ -68,8 +69,9 @@ This repository contains the source code for the [matlap.ca](https://www.matlap.
 |---|---|---|
 | [MW Multiservices](https://www.mwmultiservices.ca) | Maintenance | 2025 |
 | [Le Bar à Croissant](https://www.lebaracroissant.ca) | Bakery | 2026 |
-| [Aide-Zen](https://www.aide-zen.com) | Home Care | 2025 |
 | [Club L'Enjambée](https://www.clublenjambee.ca) | Fundraising | 2026 |
+| [B&B Construction](https://www.bbconstruction.ca) | Construction company | 2026 |
+| [Aide-Zen](https://www.aide-zen.com) | Home Care | 2025 |
 | [Maison Horazin](https://matlappp.github.io/maisonhorazin/) | Jewelry | 2026 |
 
 ## Contact
