@@ -31,7 +31,7 @@ const translations = {
         'projects.3.type': 'Aide à domicile',
         'projects.4.type': 'Levée de fonds',
         'projects.5.type': 'Entreprise de construction',
-        'projects.6.type': 'Clinique de santé',
+        'projects.6.type': 'Clinique médico-esthétique',
 
         'contact.label': 'Prochain projet?',
         'contact.title': 'Discutons de<br><em>votre vision</em>',
@@ -78,7 +78,7 @@ const translations = {
         'projects.3.type': 'Home care',
         'projects.4.type': 'Fundraising',
         'projects.5.type': 'Construction company',
-        'projects.6.type': 'Health clinic',
+        'projects.6.type': 'Medical aesthetics clinic',
 
         'contact.label': 'Next project?',
         'contact.title': 'Let\'s discuss<br><em>your vision</em>',

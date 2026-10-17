@@ -29,7 +29,7 @@ Ce dépôt contient le code source du site vitrine de [matlap.ca](https://www.ma
 | [Le Bar à Croissant](https://www.lebaracroissant.ca) | Boulangerie | 2026 |
 | [Club L'Enjambée](https://www.clublenjambee.ca) | Levée de fonds | 2026 |
 | [B&B Construction](https://www.bbconstruction.ca) | Entreprise de construction | 2026 |
-| [Clinique Au Masculin](https://www.cliniqueaumasculin.ca) | Clinique de santé | 2026 |
+| [Clinique Au Masculin](https://www.cliniqueaumasculin.ca) | Clinique médico-esthétique | 2026 |
 | [Aide-Zen](https://www.aide-zen.com) | Aide à domicile | 2025 |
 | [Maison Horazin](https://matlappp.github.io/maisonhorazin/) | Bijouterie | 2026 |
 
@@ -72,7 +72,7 @@ This repository contains the source code for the [matlap.ca](https://www.matlap.
 | [Le Bar à Croissant](https://www.lebaracroissant.ca) | Bakery | 2026 |
 | [Club L'Enjambée](https://www.clublenjambee.ca) | Fundraising | 2026 |
 | [B&B Construction](https://www.bbconstruction.ca) | Construction company | 2026 |
-| [Clinique Au Masculin](https://www.cliniqueaumasculin.ca) | Health clinic | 2026 |
+| [Clinique Au Masculin](https://www.cliniqueaumasculin.ca) | Medical aesthetics clinic | 2026 |
 | [Aide-Zen](https://www.aide-zen.com) | Home Care | 2025 |
 | [Maison Horazin](https://matlappp.github.io/maisonhorazin/) | Jewelry | 2026 |
 
